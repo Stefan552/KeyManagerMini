@@ -15,6 +15,7 @@ public class KeyManagerGUI extends JFrame {
 
     public KeyManagerGUI() throws IOException {
         keyManager = new KeyManager();
+
         setTitle("Key Manager KepDoktor Feladat");
         setSize(700, 400);
         BufferedImage image = ImageIO.read(new File ("src/main/resources/icon_chat.png"));
@@ -80,7 +81,7 @@ public class KeyManagerGUI extends JFrame {
         JScrollPane scroll= new JScrollPane(output);
         scroll.setPreferredSize (  new Dimension (600,200));
 
-        JPanel mainPanel = new JPanel();
+        JPanel mainPanel = new JPanel ();
         mainPanel.setLayout(new BorderLayout());
         mainPanel.setBorder(BorderFactory.createEmptyBorder(10, 10, 10, 10));
         mainPanel.add(keyInputPanel, BorderLayout.NORTH);
