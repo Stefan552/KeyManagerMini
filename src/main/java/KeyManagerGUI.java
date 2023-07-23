@@ -88,6 +88,7 @@ public class KeyManagerGUI extends JFrame {
         mainPanel.add(buttonPanel, BorderLayout.CENTER);
         mainPanel.add(scroll, BorderLayout.SOUTH);
         setContentPane(mainPanel);
+        setLocationRelativeTo ( null );
 
 
     }
